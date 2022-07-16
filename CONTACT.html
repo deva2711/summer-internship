@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer internship</title>
+</head>
+<body>
+    <header id="header-main" >
+        <div>
+            <div  id="header">
+            <h1>DV</h1>
+
+            <ul id="nav-bar" >
+                <li type="none"><a href="index.html" >HOME</a> </li>
+                <li type="none"><a href="ABOUT.html">ABOUT</a></li>
+                <li type="none"><a href="ACTIVITIES.html">ACTIVITIES </a></li>
+                <li type="none"><a href="BLOG.html">BLOG </a></li>
+                <li type="none"><a href="PROJECTS.html">PROJECTS </a></li>
+                <li type="none"><a href="CONTACT.html">CONTACT</a></li>
+            </ul>
+            </div>
+    </div>
+      
+        </header>
+        <section class="section-1">
+        <div class="form-box">
+            <form >
+                
+                <div class="form">
+                    <input type="text" class="text-input name-input" required>
+                    <label>Name</label>
+                
+                </div>
+                
+                <div class="form">
+                    <input type="text" class="text-input name-input" required>
+                    <label>Email</label>
+                   </div>
+              
+                <div class ="form">
+                    <textarea id="text-area" rows="8" cols="50" name="comment" form="usrform">Enter text here...</textarea>
+                        
+                </div>
+                <div class="form">
+                    <button id="btn">submit</button>
+                </div>
+
+            
+
+            </form>
+            </div>
+            </section>
+
+            <div class="address">
+            <div>
+            <pre>
+            <i class="fa-solid fa-address-card fa-3x"></i>
+            near, sagar bakery,
+            opp. kadubhai dudhvala,
+            Desai vadi, Jetpur, 
+            Rajkot, Gujarat 360370
+            </pre>
+            </div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d926.4338399905242!2d70.61846982920304!3d21.751782999100726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x51fd155e964a0715!2zMjHCsDQ1JzA2LjQiTiA3MMKwMzcnMDguNSJF!5e0!3m2!1sen!2sin!4v1657096368740!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4> Address</h4>
+                        <div class="bottom-line1"></div>
+                        <pre>
+            near, sagar bakery,
+            opp. kadubhai dudhvala,
+            Desai vadi, Jetpur, 
+            Rajkot, Gujarat 360370
+                </pre>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <div class="bottom-line1"></div>
+                    <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="activities.html">Activities</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="project.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow Me</h4>
+                        <div class="bottom-line1"></div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="contact-info" id="contact-info2">
+                            <div>
+                                <i class="fas fa-envelope fa-2x"></i>
+                                <h3>Email</h3>
+                                <a href="mailto:devangvekariya41@gmail.com"
+                                    class="btn-dark">devangvekariya41@gmail.com</a>
+    
+                            </div>
+                            <div>
+                                <i class="fas fa-phone fa-2x"></i>
+                                <h3>Phone</h3>
+                                <a href="tel:+91 7984169596" class="btn-dark">+91 7984169596</a>
+                            </div>
+                        </div>
+                    </div>
+        </footer> 
+
+        <script>
+            const labels = document.querySelectorAll( "label" );
+    
+            labels.forEach( function( label ) {
+                label.innerHTML = label.innerText
+                    .split( "" )
+                    .map(function(letter, idx){
+                return `<span style='transition-delay:${idx * 80}ms'>${letter}</span>`
+            })
+                    .join( "" );
+            } );
+        </script>
+     
+      
+      
+</body>
+</html>

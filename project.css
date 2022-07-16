@@ -15,6 +15,13 @@
     padding-top: 30px;
     padding-left: 50px;
 }
+#header-main {
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    height: 15vh;
+    color:#8a99ae;
+  
+}
 
 #nav-bar a{
     text-decoration: none;
@@ -33,15 +40,6 @@
 #nav-bar a:hover{
     color: rgb(212, 213, 212);
 }
-
-#header-main {
-    background-image: url('bg1.jpg');
-    background-repeat: no-repeat;
-    height: 15vh;
-    color:#8a99ae;
-    margin-bottom: 0.5cm;
-}
-
 .footer_container {
     max-width: 1170px;
     margin: auto;
@@ -49,7 +47,7 @@
   .row {
     display: flex;
     justify-content: space-evenly;
-    /* flex-wrap: wrap; */
+  
   }
   ul {
     list-style: none;
@@ -57,7 +55,6 @@
   .footer {
     background-color: #333;
     padding: 50px 0;
-    margin-top: 2cm;
   }
   .footer.copy {
     text-align: center;
@@ -94,6 +91,30 @@
     color: #ffbc00;
     padding-left: 8px;
   }
+  .h3 {
+    color: ;
+    text-align: center;
+  }
+  .projects {
+    line-height: 1.5rem;
+  }
+  .project_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+    background: #555;
+    color: #fff;
+  }
+  body{
+    background-color: #decc99;
+  }
+  .pre {
+    overflow-y: scroll;
+   
+    height: 30vh;
+   
+    color: rgb(0, 0, 0);
+  }
   .footer-col .social-links a {
     display: inline-block !important;
     height: 40px;
@@ -122,68 +143,5 @@
      
   }
   pre {
-    margin-left: -110px !important;
+    margin-left: -110px ;
   }
-  .bottom-line1 {
-    height: 1px;
-    width: 4rem;
-    background: #ffbc00;
-    display: block;
-    margin: 0.7rem 0;
-    
-  }
-
-  .flex-items {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    height: 100%;
-  }
-  .flex-items > div {
-    padding: 20px;
-  }
-  /* Flex columns */
-  
-  .flex-columns.flex-reverse .row {
-    flex-direction: column;
-  }
-  
-  .flex-columns .row {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .flex-columns .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 100%;
-    max-width: 100%;
-
-  }
-  .flex-columns .column .column-1,
-  .flex-columns .column .column-2 {
-    height: 100%;
-  }
-
-  .flex-columns .column-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 30px;
-  }
-  
-  .flex-columns h2 {
-    font-size: 40px;
-    font-weight: 100;
-  }
-  
-  .flex-columns h4 {
-    margin-bottom: 10px;
-  }
-  .flex-columns p {
-    margin: 20px 0;
-  }
-  

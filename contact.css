@@ -15,6 +15,13 @@
     padding-top: 30px;
     padding-left: 50px;
 }
+#header-main {
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    height: 15vh;
+    color:#8a99ae;
+  
+}
 
 #nav-bar a{
     text-decoration: none;
@@ -33,15 +40,6 @@
 #nav-bar a:hover{
     color: rgb(212, 213, 212);
 }
-
-#header-main {
-    background-image: url('bg1.jpg');
-    background-repeat: no-repeat;
-    height: 15vh;
-    color:#8a99ae;
-    margin-bottom: 0.5cm;
-}
-
 .footer_container {
     max-width: 1170px;
     margin: auto;
@@ -49,7 +47,7 @@
   .row {
     display: flex;
     justify-content: space-evenly;
-    /* flex-wrap: wrap; */
+  
   }
   ul {
     list-style: none;
@@ -57,7 +55,6 @@
   .footer {
     background-color: #333;
     padding: 50px 0;
-    margin-top: 2cm;
   }
   .footer.copy {
     text-align: center;
@@ -122,7 +119,7 @@
      
   }
   pre {
-    margin-left: -110px !important;
+    margin-left: -110px ;
   }
   .bottom-line1 {
     height: 1px;
@@ -132,58 +129,79 @@
     margin: 0.7rem 0;
     
   }
-
-  .flex-items {
+  .form {
     display: flex;
+    position: relative;
+    margin: 0cm 4cm 40px 20px;
     text-align: center;
-    justify-content: center;
-    height: 100%;
+    width: 300px;
+    
   }
-  .flex-items > div {
-    padding: 20px;
-  }
-  /* Flex columns */
-  
-  .flex-columns.flex-reverse .row {
-    flex-direction: column;
-  }
-  
-  .flex-columns .row {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  .form input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px rgb(183, 24, 24) solid;
+    display: block;
     width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: rgb(170, 27, 27);
   }
-  .flex-columns .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 100%;
-    max-width: 100%;
+  .form-box{
+    display: block:
+    text-align: center;
+    margin: 0cm 17cm 0cm 14cm;
 
   }
-  .flex-columns .column .column-1,
-  .flex-columns .column .column-2 {
-    height: 100%;
+  form{
+    background-color: #1544bb;
+    padding-top: 1cm;
   }
 
-  .flex-columns .column-2 {
+  #btn{
+    margin: 1cm 2cm 3cm 3cm;
+  }
+
+
+  .form input:focus,
+  .form input:valid {
+    outline: 0;
+    border-bottom: rgb(202, 28, 28) 1.5px solid;
+  }
+  
+  .form label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    color: #29d4eb;
+   
+  }
+  .section-1{
+    background-color: #114da1;
+  }
+  
+  .form label span {
+    display: inline-block;
+    font-size: 16px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: 0.09s ease;
+  }
+  .form input:focus + label span,
+  .form input:valid + label span {
+    color: #29d4eb;
+    transform: translateY(-30px);
+  }
+
+  .address{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 30px;
+    background-color: #24262b;
+    padding: 2cm;
+    padding-right: 2cm;
+    gap: 10cm;
   }
+
+
+
   
-  .flex-columns h2 {
-    font-size: 40px;
-    font-weight: 100;
-  }
-  
-  .flex-columns h4 {
-    margin-bottom: 10px;
-  }
-  .flex-columns p {
-    margin: 20px 0;
-  }
   

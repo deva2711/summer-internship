@@ -1,309 +1,363 @@
-{
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: "Times New Roman", Times, serif;
-    line-height: 1.6;
-    background: #fff;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  h2,
-  h3,
-  h4 {
-    text-transform: uppercase;
-  }
-  
-  img {
-    width: 100%;
-  }
-  
-  #logo {
-    width: 70px;
-    height: 70px;
-    color: #fff;
-    text-transform: capitalize;
-    text-shadow: #999;
-    font-style: italic;
-    font-weight: bolder;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-left: 0px;
-    padding-top: 0px;
-    font-size: 3rem;
-  }
-  
-  #main-nav {
-    display: flex;
-    justify-content: space-between;
-    justify-content: baseline;
 
-  }
-  #main-nav ul {
-    display: flex;
-  }
-  #main-nav ul li {
-    padding: 1rem 1.5rem;
-  }
-  #main-nav ul a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    border-bottom: 3px transparent solid;
-    padding-bottom: 0.5rem;
-    transition: border-color 0.3s;
-  }
-  #main-nav ul a:hover {
-    border-bottom: #ccc;
-  }
-  #main-nav ul a.current {
-    border-color: #ffbc00;
-  }
+#header{
+  display:flex;
+  justify-content: space-between;
+  justify-content: baseline;
+}
+#header h1{
+  padding-top: 0.5cm;
+   padding-left:40px ;
+}
+#nav-bar{
+  display: flex;
+  justify-content: space-between;
+}
+#nav-bar li{
+  padding-top: 30px;
+  padding-left: 50px;
+}
+#header-main {
+  background-image: url('bg1.jpg');
+  background-repeat: no-repeat;
+  height: 15vh;
+  color:#8a99ae;
 
-#header-inner {
-    background: url("bg1.jpg") no-repeat 20% 30% / cover;
-    height: 5.5rem;
-    border-bottom: 3px solid #ffbc00;
+}
+
+#nav-bar a{
+  text-decoration: none;
+  text-justify: auto;
+  color: #968162;
+  border-bottom: 3px transparent solid;
+  padding: 10px;
+  padding-top: 30px;
+  
+}
+#nav-bar a:hover{
+color: rgb(99, 111, 99);
+text-decoration: underline #29d4eb;
+}
+
+#nav-bar a:hover{
+  color: rgb(212, 213, 212);
+}
+.footer_container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #333;
+  padding: 50px 0;
+}
+.footer.copy {
+  text-align: center;
+  color: #fff;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  font-weight: 500;
+  position: relative;
+}
+.bottom-line1 {
+  height: 1px;
+  width: 4rem;
+  background: #ffbc00;
+  display: block;
+  margin: 0.5rem 0;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a,
+pre {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffbc00;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block !important;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center !important;
+  line-height: 40px !important;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a i {
+  text-align: center;
+  margin-top: 30%;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffbc00;
+}
+.contact-info {
+  color: #fff;
+}
+#contact-info2 a{
+  color: #f4f4f4;
+   
+}
+pre {
+  margin-left: -110px ;
 }
 
 #about-a .about-info {
-    display: grid;
-    grid-template-areas:
-      "bio-img bio bio"
-      "aw1 aw2 aw3";
-    grid-gap: 1.2rem;
-    padding: 1cm;
-  }
-  
-  #about-a .bio-image {
-    grid-area: bio-img;
-    height: 250px;
-    width: 300px;
-  }
-  
-  #about-a .bio {
-    grid-area: bio;
-    border-left: 3px solid #ffbc00;
-    padding: 0.5rem;
-  }
-  
-  #about-a .award-1 {
-    grid-area: aw1;
-  }
-  
-  #about-a .award-2 {
-    grid-area: aw2;
-  }
-  
-  #about-a .award-3 {
-    grid-area: aw3;
-  }
-  
-  #about-a .award-1 .fas,
-  #about-a .award-2 .fas,
-  #about-a .award-3 .fas {
-    color: #ffbc00;
-    margin: 1rem;
-  }
-  #about-b{
-    padding-top: 2cm;
-  }
-  
-  #about-b #progressHtml {
-    overflow: hidden;
-    height: 20px;
-    background: #ccc;
-    border-radius: 5px;
-    margin-bottom: 0.6rem;
-  }
-  #about-b #progressDoneHtml {
-    height: 100%;
-    color: #fff;
-    width: 0;
-    text-align: center;
-    background: #ffbc00;
-    transition: 1s ease 0.3s;
-    transition: 3s ease-in-out;
-  }
-  #about-b #progressCss {
-    overflow: hidden;
-    height: 20px;
-    background: #ccc;
-    border-radius: 5px;
-    margin-bottom: 0.6rem;
-  }
-  #about-b #progressDoneCss {
-    height: 100%;
-    color: #fff;
-    width: 0;
-    text-align: center;
-    background: #ffbc00;
-    transition: 1s ease 0.3s;
-    transition: 3s ease-in-out;
-  }
-  #about-b #progressSass {
-    overflow: hidden;
-    height: 20px;
-    background: #ccc;
-    border-radius: 5px;
-    margin-bottom: 0.6rem;
-  }
-  #about-b #progressDoneSass {
-    height: 100%;
-    color: #fff;
-    width: 0;
-    text-align: center;
-    background: #ffbc00;
-    transition: 1s ease 0.3s;
-    transition: 3s ease-in-out;
-  }
-  #about-b #progressBootstrap {
-    overflow: hidden;
-    height: 20px;
-    background: #ccc;
-    border-radius: 5px;
-    margin-bottom: 0.6rem;
-  }
-  #about-b #progressDoneBootstrap {
-    height: 100%;
-    color: #fff;
-    width: 0;
-    text-align: center;
-    background: #ffbc00;
-    transition: 1s ease 0.3s;
-    transition: 3s ease-in-out;
-  }
-  #about-b #progressJavascript {
-    overflow: hidden;
-    height: 20px;
-    background: #ccc;
-    border-radius: 5px;
-    margin-bottom: 0.6rem;
-  }
-  #about-b #progressDoneJavascript {
-    height: 100%;
-    color: #fff;
-    width: 0;
-    text-align: center;
-    background: #ffbc00;
-    transition: 1s ease 0.3s;
-    transition: 3s ease-in-out;
-  }
-  #about-b #progressReact {
-    overflow: hidden;
-    height: 20px;
-    background: #ccc;
-    border-radius: 5px;
-    margin-bottom: 0.6rem;
-  }
-  #about-b #progressDoneReact {
-    height: 100%;
-    color: #fff;
-    width: 0;
-    text-align: center;
-    background: #ffbc00;
-    transition: 1s ease 0.3s;
-    transition: 3s ease-in-out;
-  }
-  #about-d .testimonials {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0.5rem;
-  }
-  #about-d .testimonials ul {
-    list-style: none;
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-  }
-  #about-d .testimonials p {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 0.5rem;
-  }
-  #about-d .testimonials img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 0.5rem;
-  }
-  /* increment counter */
-  .increment-counter {
-    padding-top: 2cm;
-    background-color: #ffbc00;
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 30vh;
-    overflow: hidden;
-    margin: 0;
-  }
-  .counter-container {
-    justify-content: center;
-    text-align: center;
-    margin: 30px 50px;
-  }
-  .counter {
-    font-size: 60px;
-    margin-top: 10px;
-  }
-  
-  /* Contact page */
-  
-  #contact-a .text-fields {
-    display: grid;
-    grid-template-areas:
-      "name email"
-      "subject phone"
-      "message message";
-    grid-gap: 1.2rem;
-    margin-bottom: 1.2rem;
-  }
-  #contact-a .text-fields .name-input {
-    grid-area: name;
-  }
-  #contact-a .text-fields .name-input {
-    grid-area: name;
-  }
-  #contact-a .text-fields .subject-input {
-    grid-area: subject;
-  }
-  #contact-a .text-fields .enmail-input {
-    grid-area: enmail;
-  }
-  #contact-a .text-fields .phone-input {
-    grid-area: phone;
-  }
-  #contact-a .text-fields .message-input {
-    grid-area: message;
-    height: 100px;
-  }
-  #contact-a .text-fields .text-input {
-    padding: 0.5rem 1rem;
-  }
-  
-  #contact-a button[type="submit"] {
-    width: 50%;
-  }
-  
-  #contact-b .contact-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  
-  #contact-c h1 {
-    text-align: center;
-    font-size: 4rem;
-  }
+  display: grid;
+  grid-template-areas:
+    "bio-img bio bio"
+    "aw1 aw2 aw3";
+  grid-gap: 1.2rem;
+  padding: 1cm;
+}
+
+#about-a .bio-image {
+  grid-area: bio-img;
+  height: 250px;
+  width: 300px;
+}
+
+#about-a .bio {
+  grid-area: bio;
+  border-left: 3px solid #ffbc00;
+  padding: 0.5rem;
+}
+
+#about-a .award-1 {
+  grid-area: aw1;
+}
+
+#about-a .award-2 {
+  grid-area: aw2;
+}
+
+#about-a .award-3 {
+  grid-area: aw3;
+}
+
+#about-a .award-1 .fas,
+#about-a .award-2 .fas,
+#about-a .award-3 .fas {
+  color: #ffbc00;
+  margin: 1rem;
+}
+#about-b{
+  padding-top: 2cm;
+}
+
+#about-b #progressHtml {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem;
+}
+#about-b #progressDoneHtml {
+  height: 100%;
+  color: #fff;
+  width: 0;
+  text-align: center;
+  background: #ffbc00;
+  transition: 1s ease 0.3s;
+  transition: 3s ease-in-out;
+}
+#about-b #progressCss {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem;
+}
+#about-b #progressDoneCss {
+  height: 100%;
+  color: #fff;
+  width: 0;
+  text-align: center;
+  background: #ffbc00;
+  transition: 1s ease 0.3s;
+  transition: 3s ease-in-out;
+}
+#about-b #progressSass {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem;
+}
+#about-b #progressDoneSass {
+  height: 100%;
+  color: #fff;
+  width: 0;
+  text-align: center;
+  background: #ffbc00;
+  transition: 1s ease 0.3s;
+  transition: 3s ease-in-out;
+}
+#about-b #progressBootstrap {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem;
+}
+#about-b #progressDoneBootstrap {
+  height: 100%;
+  color: #fff;
+  width: 0;
+  text-align: center;
+  background: #ffbc00;
+  transition: 1s ease 0.3s;
+  transition: 3s ease-in-out;
+}
+#about-b #progressJavascript {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem;
+}
+#about-b #progressDoneJavascript {
+  height: 100%;
+  color: #fff;
+  width: 0;
+  text-align: center;
+  background: #ffbc00;
+  transition: 1s ease 0.3s;
+  transition: 3s ease-in-out;
+}
+#about-b #progressReact {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem;
+}
+#about-b #progressDoneReact {
+  height: 100%;
+  color: #fff;
+  width: 0;
+  text-align: center;
+  background: #ffbc00;
+  transition: 1s ease 0.3s;
+  transition: 3s ease-in-out;
+}
+#about-d .testimonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+}
+#about-d .testimonials ul {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+#about-d .testimonials p {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+#about-d .testimonials img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+/* increment counter */
+.increment-counter {
+  padding-top: 2cm;
+  background-color: #ffbc00;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  overflow: hidden;
+  margin: 0;
+}
+.counter-container {
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+/* Contact page */
+
+#contact-a .text-fields {
+  display: grid;
+  grid-template-areas:
+    "name email"
+    "subject phone"
+    "message message";
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+#contact-a .text-fields .name-input {
+  grid-area: name;
+}
+#contact-a .text-fields .name-input {
+  grid-area: name;
+}
+#contact-a .text-fields .subject-input {
+  grid-area: subject;
+}
+#contact-a .text-fields .enmail-input {
+  grid-area: enmail;
+}
+#contact-a .text-fields .phone-input {
+  grid-area: phone;
+}
+#contact-a .text-fields .message-input {
+  grid-area: message;
+  height: 100px;
+}
+#contact-a .text-fields .text-input {
+  padding: 0.5rem 1rem;
+}
+
+#contact-a button[type="submit"] {
+  width: 50%;
+}
+
+#contact-b .contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#contact-c h1 {
+  text-align: center;
+  font-size: 4rem;
+}

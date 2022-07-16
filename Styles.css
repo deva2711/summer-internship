@@ -4,6 +4,10 @@
     justify-content: space-between;
     justify-content: baseline;
 }
+#hide1{
+  font-size: 1cm;
+  color: #6accd9;
+}
 #header h1{
     padding-top: 0.5cm;
      padding-left:40px ;
